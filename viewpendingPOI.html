@@ -1,0 +1,145 @@
+<!---->
+
+<!----userprofile>
+<!--->
+<!---->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+     <title>Qbnb - Come to a journey of a life time</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+	<script type="text/javascript">
+				onload = function() {
+					if (!document.getElementsByTagName || !document.createTextNode) return;
+					var rows = document.getElementById('my_table').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+					k=0;
+					for (i = 0; i < rows.length; i++) {
+							rows[i].onclick = function() {
+							if (confirm("You are deleting row:" + (this.rowIndex+k) + "?")) {
+								document.getElementById("my_table").deleteRow(this.rowIndex);
+								k=k+1;
+							} else {
+								// Do nothing!
+							}
+							
+						}
+					}
+					
+				}
+			</script>
+</head>
+<br>
+<br>
+<br>
+<body class="body_general">
+	<!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                	<span class="glyphicon glyphicon-tower"></span> 
+                	Qbnb - They hate us coz they ain't us
+                </a>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+	<div class="container">
+		<div class="panel panel-success">
+		  <div class="panel-heading">
+			<h3 class="panel-title"><h1 align="Middle"> Admin View</h1></h3>
+		  </div>
+		  <div id="wrap_user">
+				<div class="box_admin">
+				<br>
+				</div>
+			</div><!--end wrap-->
+		  <div class="panel-body">
+			<div class="container-fluid">
+			  <div class="row">
+				  <div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4>
+						All POIs
+					  </h4>
+					</div>
+					<div style="height:400px;overflow:auto;">
+					<table class="table table-hover" id="my_table">
+					  <thead>
+						<tr>
+						  <th class="col-xs-2">#</th><th class="col-xs-2">Name</th><th class="col-xs-2">Points</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td   class="col-xs-2">1</td><td class="col-xs-2"> Mike Adams</a></td><td class="col-xs-2">23</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">2</td><td class="col-xs-2"> Holly Galivan</a></td><td class="col-xs-2">44</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">3</td><td class="col-xs-2"> Mary Shea</a></td><td class="col-xs-2">86</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">4</td><td class="col-xs-2"> Jim Adams</a></td><td>23</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">5</td><td class="col-xs-2"> Henry Galivan</a></td><td class="col-xs-2">44</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">6</td><td class="col-xs-2"> Bob Shea</a></td><td class="col-xs-2">26</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">7</td><td class="col-xs-2"> Andy Parks</a></td><td class="col-xs-2">56</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">8</td><td class="col-xs-2"> Bob Skelly</a></td><td class="col-xs-2">96</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">9</td><td class="col-xs-2"> William Defoe</a></td><td class="col-xs-2">13</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">10</td><td class="col-xs-2"> Will Tripp</a></td><td class="col-xs-2">16</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">11</td><td class="col-xs-2"> Bill Champion</a></td><td class="col-xs-2">44</td>
+						</tr>
+						<tr>
+						  <td   class="col-xs-2">12</td><td class="col-xs-2"> Lastly Jane</a></td><td class="col-xs-2">6</td>
+						</tr>
+					  </tbody>
+					</table>
+					</div>
+				  </div>
+			  </div>
+			</div>
+			<p><h1>Note:</h1> Clicking rows will delete that POI request</p>
+		</div>
+	</div>
+</div>
