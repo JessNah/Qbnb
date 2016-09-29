@@ -9,7 +9,7 @@ Images of the site as well as a for reference ER schema of the database logic ca
 
 <img src = "https://cloud.githubusercontent.com/assets/14356838/18964791/67054524-8648-11e6-898e-bd08c88028aa.jpg" >
 
-<img src = "https://cloud.githubusercontent.com/assets/14356838/18964792/67128fe0-8648-11e6-96d1-5255c38754bb.jpg"  vertical-align: middle>
+<img src = "https://cloud.githubusercontent.com/assets/14356838/18964792/67128fe0-8648-11e6-96d1-5255c38754bb.jpg" >
 
 <img src = "https://cloud.githubusercontent.com/assets/14356838/18964794/671603f0-8648-11e6-87f0-9fdc67fe7e29.jpg" >
 
